@@ -13,4 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 /.idea/
+=======
+>>>>>>> 6d4d6b4 (inital commit)
