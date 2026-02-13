@@ -1,8 +1,7 @@
-package com.suno.android.sunointerview
+package com.suno.android.sunointerview.data
 
-import ApiResponse
 import kotlinx.serialization.json.Json
-import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import retrofit2.Converter
 import retrofit2.Response
@@ -37,7 +36,7 @@ object ApiClient {
             isLenient = true
         }
 
-        val contentType = MediaType.get("application/json")
+        val contentType = "application/json".toMediaType()
         return json.asConverterFactory(contentType)
     }
 
@@ -48,5 +47,5 @@ interface ApiService {
     suspend fun getSongs(
         @Query("page") page: Int = 1,
         @Query("page_size") pageSize: Int = 10
-    ) : Response<ApiResponse>
+    ): Response<ApiResponse>
 }
