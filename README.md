@@ -6,7 +6,7 @@ A modern Android application for streaming and enjoying music from Suno, built w
 
 This app provides a seamless music and video playback experience with a focus on smooth transitions and modern UI components.
 
-![App Demo](docs/app_demo.mp4)
+[![App Demo](docs/app_demo.mp4)](https://github.com/user-attachments/assets/ba7c9d1f-e730-49f6-890c-cc7165c9a6f9)
 
 ## ✨ Features
 
